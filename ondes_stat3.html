@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>anim 2.3</title>
+</head>
+<body>
+
+    <div id="div_dimensions">
+
+        <p>Dimension de la salle</p>
+        <label for="in_longueur">Longueur en cm</label>
+        <input type="number" max="1000" id="in_longueur" name="in_longueur">
+        <label for="in_largeur">Largeur en cm</label>
+        <input type="number" max="1000" id="in_largeur" name="in_largeur">
+
+        <p>Taille de la caisse</p>
+        <label for="longueur_caisse">Profondeur en cm</label>
+        <input type="number" max="200" id="longueur_caisse" name="longueur_caisse">
+        <label for="largeur_caisse">Largeur en cm</label>
+        <input type="number" max="200" id="largeur_caisse" name="largeur_caisse">
+
+        <p>Distance du bord a la caisse</p>
+        <label for="in_posX_caisse">distance bord gauche-caisse en cm</label>
+        <input type="number" max="1000" id="in_posX_caisse" name="in_posX_caisse"> 
+        <label for="in_posY_caisse">distance bord haut-caisse en cm</label>
+        <input type="number" max="1000" id="in_posY_caisse" name="in_posY_caisse">
+
+    <div id="div_steps">   
+        <label for="in_steps">Steps (en %)</label>
+        <input type="number" min="1" max="100" id="in_steps" name="in_steps">
+    
+        <button onclick= executeCode()>appliquer </button>
+    </div> 
+    
+    </div>
+
+    <div id="div_canvas">
+
+        <canvas id="canvas" width ="100" height="100"></canvas>
+
+    </div>
+
+    <div id="div_texte">    
+        <p id="texte">
+
+        </p>
+    </div>
+
+    <style type="text/css">
+        canvas {border: 1px solid black; }
+        input {width: 50px;} 
+        body {display: flexbox; }       
+    </style>
+
+
+   <script type="text/javascript" src="ondes_stat3.js"></script> 
+</body>
+</html>
